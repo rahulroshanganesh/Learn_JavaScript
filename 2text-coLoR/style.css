@@ -1,0 +1,53 @@
+.container{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    /*put tje content in center*/
+    align-items: center;        /*put the content in center of the screen*/
+}
+
+.hex-colors{
+    text-align: center;   
+}
+
+.hex-colors h1{
+    font-size: 2rem; /*each rem is equivalent ot 16px*/
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+@keyframes changecolor{
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: orange;
+    }
+    80%{
+        color: yellow;
+    }
+    100%{
+        color: red;
+    }
+}
+
+/*If we have a mobile size of 320 the text is very high*/
+@media(max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}

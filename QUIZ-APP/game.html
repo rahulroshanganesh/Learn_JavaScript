@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIX</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> 
+        <div id="loader1"></div>
+        <div id="loader2"></div>
+        <div id="game" class="hidden">
+            <div id="score-qtag">
+
+                <div id="item-q">
+                    <p id="questionCounterText" class="prefix">
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBar-Full"></div>
+                    </div>
+                </div>
+
+                <div id="item-s">
+                    <p class="prefix" id="score-prefix">
+                        SCORE:
+                    </p>
+                    <h1 class="score" id="score">
+                        0
+                    </h1>
+                </div>
+                
+            </div>
+            <h2 id="question" style="font-size: 1.5rem;">
+                What is the answer to this question?
+            </h2>
+            
+            <p class="choice-num">
+                A
+            </p>
+            <div class="choice-container">
+                
+                <p class="choice-text" data-number="1">
+                    Choice 1
+                </p>
+            </div>
+
+            <p class="choice-num">
+                B
+            </p>
+            <div class="choice-container">
+                
+                <p class="choice-text" data-number="2">
+                    Choice 2
+                </p>
+            </div>
+        
+            <p class="choice-num">
+                C
+            </p>
+            <div class="choice-container">
+                
+                <p class="choice-text" data-number="3">
+                    Choice 3
+                </p>
+            </div>
+
+            <p class="choice-num">
+                D
+            </p>
+            <div class="choice-container">
+
+                <p class="choice-text" data-number="4">
+                    Choice 4
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
